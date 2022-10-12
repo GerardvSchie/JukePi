@@ -1,0 +1,4 @@
+mopidy
+pygobject
+vext
+vext.gi
