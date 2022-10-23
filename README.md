@@ -12,15 +12,25 @@ Also, there are web based clients which ties it all together which we can use as
 Packages:
 * [Mopidy](https://docs.mopidy.com/en/latest/installation/)
 * [Mopidy-YouTube](https://mopidy.com/ext/youtube/)
+* [Mopidy-Local](https://mopidy.com/ext/local/)
 * [yt-dlp](https://pypi.org/project/yt-dlp/)
 * [Mopidy-Iris](https://mopidy.com/ext/iris/)
+* [Mopidy-YTMusic](https://github.com/OzymandiasTheGreat/mopidy-ytmusic)
 
 A few commands:
 ```
 pip install mopidy
 pip install Mopidy-YouTube
+pip install Mopidy-Local
 pip install yt-dlp
-apt install mopidy-iris
+apt install Mopidy-Iris
+pip install ytmusicapi
+pip install Mopidy-YTMusic
+```
+
+Setup ytmusic (as listed in the github README.md)
+```
+mopidy ytmusic setup
 ```
 
 Other:
@@ -32,7 +42,7 @@ Other:
 
 Adapt config file:
 ```
-sudo nano .config/mopidy/mopidy.conf
+sudo nano ~/.config/mopidy/mopidy.conf
 ```
 
 Start mopidy directly:
@@ -58,3 +68,6 @@ Besides lists of comparing sites there are some popular options that stood out:
 * [Volumio](https://volumio.com/en/): OS + their free version is quite limited
 
 Because of that the solution is software based rather than an OS
+
+
+scp myfile.txt pi@192.168.0.198:/home/pi/Documents
