@@ -7,7 +7,29 @@ And there are many [extensions](https://mopidy.com/ext/)!
 
 Also, there are web based clients which ties it all together which we can use as initial version.
 
+## Other commands
+Warning:
+mopidy.config.keyring Fetching passwords from your keyring failed. Any passwords stored in the keyring will not be available. (org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally with the following error: Authorization required, but no authorization protocol specified
+Autolaunch error: X11 initialization failed.
+
+docs.mopidy.com/en/release-2.3/service/
+docs.mopidy.com/en/latest/troubleshooting/
+
+sudo mopidyctl local scan
+sudo journalctl -r -u mopidy | tee /home/gerard/App/mopidy.log
+
+
+https://www.alsa-project.org/wiki/Asoundrc
+sudo nano /etc/asound.conf
+https://bbs.archlinux.org/viewtopic.php?id=116042
+https://discourse.mopidy.com/t/help-configure-mopidy-to-use-alsa-usb-soundcard/1397/4
+
+
 ## Installation
+Add to .bashrc to install for user and superuser
+```
+umask 022
+```
 
 Packages:
 * [Mopidy](https://docs.mopidy.com/en/latest/installation/)
@@ -31,6 +53,11 @@ pip install Mopidy-YTMusic
 Setup ytmusic (as listed in the github README.md)
 ```
 mopidy ytmusic setup
+```
+
+Make sure mopidy user is added and do following:
+```
+sudo adduser mopidy video audio
 ```
 
 Other:
