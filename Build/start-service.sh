@@ -7,7 +7,7 @@ sudo cp ~/App/JukePi/Configs/mopidy-service.conf /etc/mopidy/mopidy.conf
 sudo cp ~/App/JukePi/Configs/default.pa /etc/pulse/default.pa
 
 # Restart pulseaudio and mopidy
-sudo pulseaudio --kill
+pulseaudio --kill
 pulseaudio --start
 export GST_DEBUG=3
 export GST_DEBUG_FILE=/home/gerard/gstreamer.log
